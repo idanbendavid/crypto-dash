@@ -2,7 +2,7 @@ import CoinCard from '../components/CoinCard';
 import LimitSelector from '../components/LimitSelector';
 import Filterinput from '../components/FilterInput';
 import SortSelector from '../components/SortSelector';
-import Spinner from "../components/spinner";
+import Spinner from "../components/Spinner";
 
 
 const HomePage = ({ coins, filter, setFilter, limit, setLimit, sortBy, setSortBy, loading, error }) => {

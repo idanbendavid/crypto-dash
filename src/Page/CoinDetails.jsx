@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router";
-import Spinner from "../components/spinner";
+import Spinner from "../components/Spinner";
 import CoinChart from "../components/coinChart";
 const API_URL = import.meta.env.VITE_COIN_API_URL;
 
