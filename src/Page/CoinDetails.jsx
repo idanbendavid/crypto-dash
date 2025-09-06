@@ -53,8 +53,8 @@ const CoinDetailsPage = () => {
                         <h4>24H Price change: ${coin.market_data.price_change_24h.toFixed(2)}({coin.market_data.price_change_24h.toFixed(2)}%)</h4>
                         <h4>Circulating Supply: {coin.market_data.circulating_supply.toLocaleString()} </h4>
                         <h4>Total Supply: {coin.market_data.total_supply?.toLocaleString() || 'N/A'}</h4>
-                        <h4>All Time High: ${coin.market_data.ath.usd.toLocaleString()} on {' '} {new Date(coin.market_data.ath_date.usd.toLocaleString())}</h4>
-                        <h4>All Time Low: ${coin.market_data.atl.usd.toLocaleString()} on {' '} {new Date(coin.market_data.atl_date.usd.toLocaleString())}</h4>
+                        <h4>All Time High: ${coin.market_data.ath.usd.toLocaleString()} on {' '} {new Date(coin.market_data.ath_date.usd).toLocaleString()}</h4>
+                        <h4>All Time Low: ${coin.market_data.atl.usd.toLocaleString()} on {' '} {new Date(coin.market_data.atl_date.usd).toLocaleString()}</h4>
                         <h4>Last Updated: {new Date(coin.last_updated).toLocaleDateString()}</h4>
                     </div>
 

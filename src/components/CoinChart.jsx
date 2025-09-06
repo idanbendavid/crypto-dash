@@ -18,12 +18,12 @@ const CoinChart = ({ coinId }) => {
     const fetchPrices = async () => {
         const response = await axios.get(`${API_URL}/${coinId}/market_chart?vs_currency=usd&days=7`);
 
-        const data = await response.json();
+        const data = response.data;
 
-        const prices = data.prices.map((price) => {
-            x: price[0]
+        const prices = data.prices.map((price) => ({
+            x: price[0],
             y: price[1]
-        });
+        }));
 
         setChartData({
             datasets: [{
